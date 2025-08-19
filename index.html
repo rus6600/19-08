@@ -1,12 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    123
-</body>
+  </head>
+  <body>
+    <!-- Описание-->
+    <section class="atm-container">
+      <div class="atm_desc_grid">
+        <picture class="atm_desc__img">
+          <source srcset="images/product1_mb.png" media="(max-width: 900px)" />
+          <img
+            src="images/product1.png"
+            alt="Система очистки воздуха Atmosphere Mini™ от Amway"
+          />
+        </picture>
+        <p class="atm_desc__text">
+          Система очистки воздуха Atmosphere Mini™ от Amway заботится о вашем
+          здоровье, предлагая проверенные временем технологии очистки воздуха. В
+          современном мире, где чистота воздуха имеет первостепенное значение
+          для здоровья, Atmosphere Mini™ становится незаменимым помощником в
+          создании здорового микроклимата в вашем доме.
+        </p>
+        <p class="atm_desc__text">
+          Мы привыкли думать, что стены дома защищают нас от внешних
+          загрязнителей. Но, как оказалось, качество воздуха в помещениях может
+          быть в 2-5 раз хуже, чем на улице. <br />
+          <strong
+            >Благодаря трехступенчатой системе фильтрации, Atmosphere Mini™
+            очищает на микроскопическом уровне 99,99% частиц размером до 0,0024
+            микрона.</strong
+          >
+        </p>
+        <picture class="atm_desc__img">
+          <source srcset="images/product2_mb.png" media="(max-width: 900px)" />
+          <img
+            src="images/product2.png"
+            alt="Девушка сидит рядом с системой очистки воздуха Atmosphere Mini™ от Amway"
+          />
+        </picture>
+      </div>
+
+      <div class="atm-style">
+        <img
+          class="atm-style__img"
+          src="images/bg1.jpg"
+          alt="фото комнаты с мебелью"
+        />
+        <div class="atm-style__info">
+          <h2 class="atm-style__title">Компактный и стильный дизайн</h2>
+          <div class="atm-style__desc">
+            <p class="atm-style__text">
+              Atmosphere Mini™ сочетает в себе современный дизайн и передовые
+              технологии, обеспечивая не только чистый воздух, но и эстетическое
+              удовольствие. Элегантный внешний вид вписывается в любой интерьер.
+            </p>
+            <p class="atm-style__text">
+              Мощная производительность в компактном формате. Эффективно очищает
+              220 кубических метров загрязненного воздуха в час. <br />
+              Идеален для помещений до 18,6 м².
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="atm_title">Для кого разработан Atmosphere Mini™</h1>
+
+      <div class="atm_flex_cols">
+        <figure class="atm_figure">
+          <img
+            src="images/for1.png"
+            alt="Семьи с детьми и пожилыми родителями"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Семьи с детьми и пожилыми родителями
+          </figcaption>
+          <p class="atm_figure__desc">
+            Лёгкие детей и ослабленный иммунитет пожилых людей особенно
+            чувствительны к загрязнённому воздуху. Система очистки помогает
+            сохранить здоровье всей семьи.
+          </p>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/for2.png"
+            alt="Люди с респираторными проблемами"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Люди с респираторными проблемами
+          </figcaption>
+          <p class="atm_figure__desc">
+            Надёжное решение для людей с астмой и аллергией, подтверждённое
+            двумя международными сертификатами.
+          </p>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/for3.png"
+            alt="Сотрудники офисов, магазинов, закрытых помещений"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Сотрудники офисов, магазинов, закрытых помещений
+          </figcaption>
+          <p class="atm_figure__desc">
+            Чистый воздух помогает снизить усталость и риск распространения
+            заболеваний.
+          </p>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/for4.png"
+            alt="Люди, которые ценят качественный сон"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Люди, которые ценят качественный сон
+          </figcaption>
+          <p class="atm_figure__desc">
+            Использование устройства улучшает качество сна, что подтверждено
+            международным сертификатом SleepScoreLabs.
+          </p>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/for5.png"
+            alt="владельцы домашних животных"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Владельцы домашних животных
+          </figcaption>
+          <p class="atm_figure__desc">
+            Система фильтрации 3-в-1 эффективно удаляет шерсть, аллергены и
+            нейтрализует запахи, создавая свежий и чистый воздух в вашем доме.
+          </p>
+        </figure>
+      </div>
+    </section>
+    <!-- Описание-->
+
+    <!-- Преимущества-->
+    <section class="atm-container">
+      <h2 class="atm_title">Важные преимущества Atmosphere Mini™</h2>
+
+      <div class="atm_flex_cols atm_flex_cols_figs">
+        <figure class="atm_figure">
+          <img
+            src="images/pros1.png"
+            alt="Семьи с детьми и пожилыми родителями"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Мощная производительность в компактном формате.  220 м³/ч идеален
+            для помещений до 18,6 м²
+          </figcaption>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/pros2.png"
+            alt="Люди с респираторными проблемами"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Очищает на микроскопическом уровне 99,99% частиц размером до 0,0024
+            микрона
+          </figcaption>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/pros3.png"
+            alt="Сотрудники офисов, магазинов, закрытых помещений"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Система фильтрации 3-в-1 удаляет более 300 загрязняющих компонентов
+          </figcaption>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/pros4.png"
+            alt="Люди, которые ценят качественный сон"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Бережёт электроэнергию и работает почти незаметно
+          </figcaption>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/pros5.png"
+            alt="владельцы домашних животных"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Способен оказывать положительное влияние на качество сна —
+            подтверждено сертификатом SleepScore Labs
+          </figcaption>
+        </figure>
+        <figure class="atm_figure">
+          <img
+            src="images/pros6.png"
+            alt="владельцы домашних животных"
+            class="atm_figure__img"
+          />
+          <figcaption class="atm_figure__caption">
+            Умное управление через приложение Amway™ Healthy Home
+          </figcaption>
+        </figure>
+      </div>
+      <h2 class="atm_subtitle">
+        Atmosphere Mini™ оснащен системой фильтрации 3-в-1, которая удаляет
+        более 300 загрязняющих веществ из воздуха, проходящего через устройство
+      </h2>
+
+      <picture class="atm_desc__img">
+        <source srcset="images/bg2_mb.png" media="(max-width: 900px)" />
+        <img
+          src="images/bg2.png"
+          alt="Система очистки воздуха Atmosphere Mini™ от Amway"
+        />
+      </picture>
+
+      <div class="atm_filter__cols">
+        <div class="atm_filter__cols_item">
+          <p class="atm_filter__cols_item_title">
+            Фильтр предварительной очистки
+          </p>
+          <p class="atm_filter__cols_item_text">
+            Задерживает крупные частицы, такие как волосы, пыль, пыльца, шерсть
+            и другие.
+          </p>
+        </div>
+        <div class="atm_filter__cols_item">
+          <p class="atm_filter__cols_item_title">Угольный фильтр</p>
+          <p class="atm_filter__cols_item_text">
+            Улавливает запахи приготовления пищи, формальдегид, озон и общее
+            количество летучих органических соединений (ЛОС).
+          </p>
+        </div>
+        <div class="atm_filter__cols_item">
+          <p class="atm_filter__cols_item_title">Hepa-фильтр</p>
+          <p class="atm_filter__cols_item_text">
+            Устраняет более 300 видов микроскопических загрязнений и вирусов,
+            эффективно задерживая частицы, которые в 125 раз меньше минимального
+            размера, предусмотренного стандартами HEPA.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="atm_subtitle">
+        Какие частицы и вирусы задерживает система фильтрации Atmosphere Mini™
+      </h2>
+
+      <div class="atm_tabs">
+        <p class="atm_tabs__text">
+          Коронавирус <br />
+          Аллергены кошек <br />
+          Аллергены собак <br />
+          Аллергены тараканов Табачный дым
+        </p>
+        <p class="atm_tabs__text">
+          Амброзия <br />
+          Пыль <br />
+          Пылевые клещи <br />
+          Цветочная пыльца <br />
+          Крапива
+        </p>
+        <p class="atm_tabs__text">
+          Золотарник <br />
+          Асбест <br />
+          Бензол <br />
+          Формальдегид <br />
+          Диоксид серы
+        </p>
+        <p class="atm_tabs__text">
+          Диоксид азота <br />
+          Вирус гриппа А <br />
+          Вирус кори <br />
+          Стрептококковая пневмония <br />
+          Легионелла пневмофила
+        </p>
+      </div>
+    </section>
+    <!-- Преимущества-->
+    <!-- Сертификаты-->
+    <section class="atm-container">
+      <div class="atm-cert_info">
+        <h2 class="atm_title atm-cert_info__title">
+          Сертификат Sleep Score Labs
+        </h2>
+        <picture class="atm_cert__img">
+          <source srcset="images/bg3_mb.png" media="(max-width: 900px)" />
+          <img
+            src="images/bg3.png"
+            alt="Девушка спит рядом с системой очистки воздуха Atmosphere Mini™ от Amway"
+          />
+        </picture>
+        <img
+          class="atm-cert_info__img"
+          src="images/certificate1.png"
+          alt="Сертификат SleepScore Labs"
+        />
+        <div class="atm-cert_info__desc">
+          <a href="">
+            <p class="atm-cert__info__desc_text">Сертификат SleepScore Labs</p>
+          </a>
+          <p class="atm-cert__info__desc_text">
+            подтверждает, что Atmosphere Mini™ способствует улучшению качества
+            сна, создавая более чистую и здоровую атмосферу в спальне.
+          </p>
+          <p class="atm-cert__info__desc_text">
+            Компания SleepScore Labs, мировой лидер в области науки о сне,
+            провела 8-недельное исследование устройства Atmosphere Mini™, в
+            котором приняли участие около 30 человек в возрасте от 18 до 75 лет.
+            Участники отметили улучшение качества воздуха и сна в целом, наряду
+            с тем, что было меньше ночей, когда они не могли уснуть и
+            ворочались. Они также сообщили, что за большее количество дней они
+            чувствовали себя более отдохнувшими и удовлетворенными качеством
+            сна.
+          </p>
+        </div>
+      </div>
+      <h2 class="atm_title atm_title__left">
+        Atmosphere Mini™: надежность, подтвержденная международными стандартами!
+      </h2>
+      <div class="atm-cert__label">
+        <img
+          src="images/certificate2.png"
+          alt="allergy uk - seal of approval logo image"
+          class="atm-cert__label_img"
+        />
+        <div class="atm-cert__label_desc">
+          <p class="atm-cert__label_title">allergy uk - seal of approval</p>
+          <p class="atm-cert__label_text">
+            Признание в Великобритании: устройство безопасно и эффективно даже
+            для людей с аллергией и респираторными заболеваниями.
+          </p>
+        </div>
+      </div>
+      <div class="atm-cert__label">
+        <img
+          src="images/certificate3.png"
+          alt="Ecarf logo image"
+          class="atm-cert__label_img"
+        />
+        <div class="atm-cert__label_desc">
+          <p class="atm-cert__label_title">Ecarf</p>
+          <p class="atm-cert__label_text">
+            Европейский сертификат, подтверждающий, что устройство подходит для
+            людей с аллергией и чувствительными дыхательными путями.
+          </p>
+        </div>
+      </div>
+      <div class="atm-cert__label">
+        <img
+          src="images/certificate4.png"
+          alt="aham logo image"
+          class="atm-cert__label_img"
+        />
+        <div class="atm-cert__label_desc">
+          <p class="atm-cert__label_title">aham</p>
+          <p class="atm-cert__label_text">
+            Независимая организация, подтверждающая реальные характеристики
+            устройства: CADR (скорость подачи чистого воздуха), уровень шума и
+            производительность - все измерено по международным стандартам AHAM.
+          </p>
+        </div>
+      </div>
+      <div class="atm-cert__label">
+        <img
+          src="images/certificate5.png"
+          alt="Energy star logo image"
+          class="atm-cert__label_img"
+        />
+        <div class="atm-cert__label_desc">
+          <p class="atm-cert__label_title">Energy star</p>
+          <p class="atm-cert__label_text">
+            Международный сертификат энергоэффективности, подтверждающий
+            экономное потребление энергии без потери качества работы.
+          </p>
+        </div>
+      </div>
+      <h2 class="atm_title atm_title__left atm_title_sm">
+        Выбирая Atmosphere Mini™, Вы выбираете надежность, подтвержденную опытом
+        и строгими стандартами качества
+      </h2>
+    </section>
+    <!-- Сертификаты-->
+    <!-- Инструкция-->
+    <section class="atm-container">
+      <div class="atm-video">
+        <picture class="atm_video__img">
+          <source srcset="images/bg4_mb.png" media="(max-width: 900px)" />
+          <img
+            src="images/bg4.png"
+            alt="Система очистки воздуха Atmosphere Mini™ от Amway"
+          />
+        </picture>
+        <div class="atm_iframe">
+          <iframe
+            class="atm_iframe"
+            src="https://player.vimeo.com/video/1111210809?h=22db01795b&autoplay=0"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="atm_iframe">
+          <iframe
+            id="atm-ifame"
+            class="atm_iframe"
+            src="https://player.vimeo.com/video/1111211803?h=7a97228fd9&autoplay=0"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Инструкция-->
+    <!-- Умное управление-->
+    <section class="atm-container atm-control">
+      <h2 class="atm_title atm_title__left">
+        Удаленное управление через приложение Amway™ Healthy Home
+      </h2>
+      <div class="atm-control_label">
+        <p class="atm-control_label__text">
+          С приложением Amway™ Healthy Home вы получите ряд значительных
+          преимуществ, которые сделают ваше взаимодействие с устройствами еще
+          более комфортным и эффективным.
+        </p>
+        <img
+          src="images/certificate5.png"
+          alt="До 25 устройств"
+          class="atm-control_label__img"
+        />
+      </div>
+
+      <div class="atm-control_tile_wrapper">
+        <div class="atm-control_tile">
+          <img
+            class="atm-control_tile__img"
+            src="images/product3.png"
+            alt="phone app image"
+          />
+          <div class="atm-control_desc">
+            <p class="atm-control_desc__title">
+              МОНИТОРИНГ КАЧЕСТВА ВОЗДУХА В РЕАЛЬНОМ ВРЕМЕНИ
+            </p>
+            <p class="atm-control_desc__subtitle">
+              Следите за чистотой воздуха круглосуточно!
+            </p>
+            <p class="atm-control_desc__text">
+              Умный мониторинг в реальном времени позволяет мгновенно узнавать о
+              любых изменениях в качестве воздуха и создавать идеальные условия
+              для вашего здоровья и комфорта.
+            </p>
+          </div>
+          <div class="atm-control_desc">
+            <p class="atm-control_desc__title">
+              УДАЛЕННОЕ УПРАВЛЕНИЕ НЕСКОЛЬКИМИ УСТРОЙСТВАМИ
+            </p>
+            <p class="atm-control_desc__subtitle">
+              Полный контроль, где бы вы ни были!
+            </p>
+            <p class="atm-control_desc__text">
+              Управляйте сразу несколькими устройствами через смартфон или
+              планшет и создавайте идеальные условия в доме одним касанием.
+            </p>
+          </div>
+        </div>
+        <div class="atm-control_tile">
+          <div class="atm-control_desc">
+            <p class="atm-control_desc__title">
+              ЗАКАЗ НОВОГО ФИЛЬТРА ПРЯМО В ПРИЛОЖЕНИИ
+            </p>
+            <p class="atm-control_desc__text">Чистый воздух — без перерывов.</p>
+            <p class="atm-control_desc__subtitle">
+              С возможностью заказа фильтра в один клик вы всегда обеспечены
+              свежестью и защитой, не выходя из дома.
+            </p>
+          </div>
+          <div class="atm-control_desc">
+            <p class="atm-control_desc__title">
+              УВЕДОМЛЕНИЕ О СОСТОЯНИИ ФИЛЬТРА
+            </p>
+            <p class="atm-control_desc__subtitle">
+              Всегда вовремя — без лишних забот!
+            </p>
+            <p class="atm-control_desc__text">
+              Устройство само напомнит о замене фильтра и позволит настроить
+              расписание работы под ваш ритм жизни.
+            </p>
+          </div>
+          <img
+            class="atm-control_tile__img"
+            src="images/product4.png"
+            alt="phone app image"
+          />
+        </div>
+      </div>
+
+      <h2 class="atm_title">Скачать приложение Amway™ Healthy Home</h2>
+
+      <div class="atm-control_steps">
+        <p class="atm-control_step">
+          1. Нажмите на кнопку Google Play, если у вас Android, или App Store,
+          если вы пользуетесь iPhone.
+        </p>
+        <p class="atm-control_step">
+          2. В открывшемся магазине приложений нажмите «Установить» или
+          «Скачать».
+        </p>
+        <p class="atm-control_step">
+          3. Дождитесь окончания загрузки и откройте приложение.
+        </p>
+        <p class="atm-control_step">
+          4. Следуйте инструкциям на экране для настройки и начала работы.
+        </p>
+      </div>
+
+      <div class="atm-control_buttons">
+        <img
+          src="images/amway_home.png"
+          alt="Amway™ Home logo"
+          class="atm-control_button__logo"
+        />
+        <div class="atm-control_buttons_wrapper">
+          <a
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.amwayglobal.healthyhome"
+            ><button class="atm-control_button">
+              <img
+                src="images/googleplaybtn.png"
+                alt="Go to Google play appstore"
+              /></button
+          ></a>
+          <a
+            target="_blank"
+            href="https://apps.apple.com/us/app/amway-healthy-home/id1659675700"
+            ><button class="atm-control_button">
+              <img
+                src="images/appstorebtn.png"
+                alt="Go to Apple Appstore"
+              /></button
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Умное управление-->
+    <!-- Тех. характеристики-->
+    <section class="atm-container">
+      <h2 class="atm_title">Технические характеристики</h2>
+      <div class="atm-specs">
+        <picture class="atm-specs__img">
+          <source srcset="images/product6_mb.png" media="(max-width: 900px)" />
+          <img
+            src="images/product6.png"
+            alt="Система очистки воздуха Atmosphere Mini™ от Amway"
+          />
+        </picture>
+        <div class="atm-specs_desc">
+          <p class="atm-specs_desc__text">Точные размеры Atmosphere Mini™:</p>
+          <ul class="atm-specs_list">
+            <li class="atm-specs__list_item">Ширина: 35,56 см</li>
+            <li class="atm-specs__list_item">Высота: 48 см</li>
+            <li class="atm-specs__list_item">Глубина: 25,56 см</li>
+            <li class="atm-specs__list_item">Общий вес: 5,22 кг</li>
+          </ul>
+          <p class="atm-specs_desc__text">
+            Благодаря своим компактным размерам и легкому весу Atmosphere Mini™
+            идеально подходит для спален, детских комнат, кабинетов и других
+            небольших помещений, где важна чистота воздуха и экономия
+            пространства.
+          </p>
+        </div>
+      </div>
+      <h2 class="atm_subtitle atm-fw-700">
+        Сводная информация о звуковом давлении Atmosphere Mini™
+      </h2>
+
+      <div class="atm_tabs">
+        <div class="atm_tab">
+          <p class="atm_tab__title">Ночной режим</p>
+          <p class="atm_tab__subtitle">28 дБА</p>
+          <p class="atm_tab__text">
+            Практически полная тишина. Это уровень звука, который можно
+            встретить в очень тихой библиотеке, в звукоизолированной студии или
+            в сельской местности ночью. Многие люди не воспринимают этот уровень
+            шума как что-либо заметное.
+          </p>
+        </div>
+        <div class="atm_tab">
+          <p class="atm_tab__title">Скорость 1</p>
+          <p class="atm_tab__subtitle">33 дБА</p>
+          <p class="atm_tab__text">
+            Это уровень звука шепота на расстоянии 1 метра или тихо работающего
+            компьютера. Он не должен мешать большинству видов деятельности,
+            включая сон.
+          </p>
+        </div>
+        <div class="atm_tab">
+          <p class="atm_tab__title">Скорость 2</p>
+          <p class="atm_tab__subtitle">42 дБА</p>
+          <p class="atm_tab__text">
+            Это уровень звука обычной тихой квартиры ночью, работающего
+            холодильника или тихого разговора.
+          </p>
+        </div>
+        <div class="atm_tab">
+          <p class="atm_tab__title">Скорость 3</p>
+          <p class="atm_tab__subtitle">49 дБА</p>
+          <p class="atm_tab__text">
+            Это уровень звука обычного разговора, работающей посудомоечной
+            машины или кондиционера. Он может быть заметен, если человек
+            чувствителен к шуму.
+          </p>
+        </div>
+      </div>
+      <h3 class="atm_subtitle atm-fw-700">Эксплуатационная мощность системы</h3>
+      <div class="atm-specs__table_desc">
+        <p class="atm-specs__text">
+          Система очистки воздуха Atmosphere Mini™ потребляет менее 20 Вт на
+          максимальной скорости (3), что составляет менее 170 кВт/ч в год при
+          работе на максимальной скорости 24 часа в сутки 7 дней в неделю.
+        </p>
+        <p class="atm-specs__text">
+          Ниже приведена таблица с указанием потребляемой мощности и годового
+          энергопотребления системы очистки воздуха Atmosphere Mini™ на каждой
+          скорости. Годовое энергопотребление рассчитано с учетом того, что
+          система используется на выбранной скорости 24 часа в сутки в течение
+          всего года.
+        </p>
+      </div>
+
+      <div class="atm_tabs">
+        <table class="atm_table">
+          <tr>
+            <th>Скорость</th>
+            <th>
+              Мощность <br />
+              (Вт)
+            </th>
+            <th>
+              Годовое потребление энергии 24/7 <br />
+              (кВт/ч)
+            </th>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>19,4</td>
+            <td>169,94</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10,2</td>
+            <td>89,35</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>4,8</td>
+            <td>42,05</td>
+          </tr>
+          <tr>
+            <td>Ночной режим</td>
+            <td>3,2</td>
+            <td>28,03</td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="atm_subtitle atm-fw-700">
+        Сравнительные показатели потребления электроэнергии
+      </h3>
+      <div class="atm_tabs">
+        <div class="atm_tab">
+          <p class="atm_tab__title">Устройство</p>
+          <p class="atm_tab__text">Телевизор</p>
+          <p class="atm_tab__text">Холодильник</p>
+          <p class="atm_tab__text">Стиральная машина</p>
+        </div>
+        <div class="atm_tab">
+          <p class="atm_tab__title">В режиме ожидания</p>
+          <p class="atm_tab__text">2 – 10 Вт</p>
+          <p class="atm_tab__text">1 – 5 Вт</p>
+          <p class="atm_tab__text">1 – 5 Вт</p>
+        </div>
+        <div class="atm_tab">
+          <p class="atm_tab__title">Во время работы</p>
+          <p class="atm_tab__text">50-150 Вт</p>
+          <p class="atm_tab__text">100 – 300 Вт</p>
+          <p class="atm_tab__text">300 – 2000 Вт</p>
+        </div>
+      </div>
+    </section>
+    <!-- Тех. характеристики-->
+  </body>
 </html>
