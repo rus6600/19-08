@@ -48,6 +48,10 @@ picture {
 }
 
 @media (width < 900px) {
+  .atm-container {
+    padding-inline: 1rem;
+  }
+
   .atm_title {
     margin: 2.5rem auto;
     line-height: 50px;
@@ -398,10 +402,14 @@ li {
 
 @media (width < 900px) {
   .atm-cert_info {
-    margin-block: 1rem;
+    margin-block: 2rem;
     padding: 0;
     grid-template-columns: 1fr;
     place-items: center;
+  }
+
+  .atm_cert__img {
+    grid-area: 2/1/3/2;
   }
 
   .atm-cert_info__img {
@@ -579,6 +587,7 @@ li {
 
   .atm-control_tile_wrapper {
     padding: 0;
+    margin-block: 2rem;
   }
 
   .atm-control_tile {
@@ -594,10 +603,6 @@ li {
   }
   .atm-control_tile:last-of-type img {
     grid-area: 1/1/2/2;
-  }
-
-  .atm-control_tile:last-of-type .atm-control_desc {
-    /* border-radius: 50px 50px 0 50px; */
   }
 
   .atm-control_steps {
