@@ -324,7 +324,7 @@ picture {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  padding: 40px 60px;
+  padding: 40px 0;
 }
 
 .atm-cert_info__title {
@@ -338,6 +338,7 @@ picture {
 
 .atm-cert_info__img {
   width: 180px;
+  justify-self: center;
   grid-area: 3/1/4/2;
   aspect-ratio: 1/1;
 }
