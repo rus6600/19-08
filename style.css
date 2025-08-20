@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 img,
@@ -24,7 +25,7 @@ picture {
 }
 
 .atm_title {
-  margin: 5rem auto;
+  margin: 2rem auto;
   font-size: 2.5rem;
   text-align: center;
   line-height: 37.8px;
@@ -48,16 +49,9 @@ picture {
 }
 
 @media (width < 900px) {
-  .atm-container {
-    padding-inline: 1rem;
-  }
-
   .atm_title {
-    margin: 2.5rem auto;
+    margin: 2.5rem 1rem;
     line-height: 50px;
-  }
-  .atm_title__left {
-    text-align: center;
   }
 }
 .atm_clr-blue {
@@ -71,21 +65,6 @@ picture {
 .atm-fw-700 {
   font-weight: 700;
 }
-.atm-container p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-/* .atm-container ul,
-li {
-  padding: 0 !important;
-  margin: 0 !important;
-} */
 
 .atm_desc_grid {
   display: grid;
@@ -112,12 +91,17 @@ li {
 
 @media (width < 900px) {
   .atm_desc_grid {
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     grid-template-columns: 1fr;
   }
   .atm_desc__text {
     grid-column: span 1;
   }
+
+  .atm_desc__img {
+    margin-inline: 1rem;
+  }
+
   .atm_desc__img img {
     width: 100%;
     object-fit: cover;
@@ -291,6 +275,7 @@ li {
 @media (width < 900px) {
   .atm_filter__cols {
     grid-template-columns: 1fr;
+    margin-inline: 1rem;
     row-gap: 2.5rem;
   }
 }
@@ -317,6 +302,10 @@ li {
 }
 
 @media (width < 900px) {
+  .atm_tabs {
+    margin-inline: 1rem;
+  }
+
   .atm_tabs__text:not(:first-of-type) {
     border-left: none;
   }
@@ -409,7 +398,8 @@ li {
   }
 
   .atm_cert__img {
-    grid-area: 2/1/3/2;
+    margin-inline: 1rem;
+    grid-area: 3/1/4/2;
   }
 
   .atm-cert_info__img {
@@ -419,10 +409,12 @@ li {
     grid-area: 2/1/3/2;
   }
   .atm-cert_info__desc {
-    grid-area: 3/1/4/2;
+    margin-inline: 1rem;
+    grid-area: 4/1/5/2;
   }
 
   .atm-cert__label {
+    margin-inline: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -446,19 +438,14 @@ li {
 @media (width < 900px) {
   .atm-video {
     display: flex;
+    margin-inline: 1rem;
     flex-direction: column;
   }
 }
 
-.atm-control .atm_title:first-of-type {
-  width: 70%;
-  margin-right: auto;
-  margin: 3rem auto 3rem 0;
-}
-
 .atm-control_label {
   display: grid;
-  padding: 5rem 2rem;
+  padding:  2rem;
   grid-template-columns: 3.5fr 1fr;
   align-items: center;
   gap: 2.5rem;
@@ -482,6 +469,8 @@ li {
   );
   border-radius: 50px;
 }
+
+
 
 .atm-control_tile {
   display: grid;
@@ -569,15 +558,16 @@ li {
 }
 
 .atm-control h2 {
-  color: var(--clr-grey);
+  color: var(--clr-blue);
+  padding-inline: 2rem;
 }
 
+
 @media (width < 900px) {
-  .atm-control .atm_title:first-of-type {
-    width: 100%;
-  }
   .atm-control h2 {
-    margin: 0;
+    margin: 3rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
   .atm-control_label {
     padding: 0;
@@ -588,6 +578,10 @@ li {
   .atm-control_tile_wrapper {
     padding: 0;
     margin-block: 2rem;
+  }
+
+  .atm-control_label__text {
+    margin-inline: 1rem;
   }
 
   .atm-control_tile {
@@ -726,6 +720,7 @@ li {
 
 @media (width < 900px) {
   .atm-specs {
+    margin-inline: 1rem;
     grid-template-columns: 1fr;
   }
   .atm-specs__img {
@@ -741,5 +736,8 @@ li {
   }
   .atm_tabs {
     row-gap: 1rem;
+  }
+  .atm-specs__table_desc {
+    margin-inline: 1rem;
   }
 }
