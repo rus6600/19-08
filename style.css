@@ -481,13 +481,13 @@ picture {
 
 .atm-control_tile {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 245px 1fr 1fr;
   margin-block: 2rem;
   gap: 2.5rem;
 }
 
 .atm-control_tile:last-of-type {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 245px;
 }
 
 .atm-control_desc {
@@ -496,7 +496,6 @@ picture {
   flex-direction: column;
   gap: 20px;
   background-color: white;
-  border-radius: 50px;
 }
 
 .atm-control_desc__title {
@@ -566,6 +565,18 @@ picture {
   padding-inline: 2rem;
 }
 
+.atm-rounded-left {
+  border-radius: 50px 50px 50px 0;
+}
+
+.atm-rounded-right {
+  border-radius: 50px 50px 0 50px;
+}
+
+.atm-control_tile__img {
+  height: 100%;
+}
+
 @media (width < 900px) {
   .atm-control h2 {
     margin: 3rem 1rem;
@@ -589,12 +600,14 @@ picture {
 
   .atm-control_tile {
     grid-template-columns: 1fr;
-    padding-block: 1rem;
   }
+  .atm-control_tile:last-of-type {
+    padding-bottom: 2rem;
+  }
+
   .atm-control_desc {
     margin-inline: 1rem;
     padding: 2.5rem;
-    border-radius: 50px;
   }
   .atm-control_tile:last-of-type {
     grid-template-columns: 1fr;
