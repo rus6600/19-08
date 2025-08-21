@@ -72,8 +72,8 @@ picture {
   gap: 2.5rem;
 }
 
-.atm_desc__img {
-  border-radius: 3rem;
+.atm_desc__img img {
+  border-radius: 3rem; 
 }
 
 .atm_desc__text {
