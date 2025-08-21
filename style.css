@@ -98,13 +98,9 @@ picture {
     grid-column: span 1;
   }
 
-  .atm_desc__img {
-    margin-inline: 1rem;
-  }
-
   .atm_desc__img img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .atm_desc__img:last-of-type {
     grid-row: 3/4;
