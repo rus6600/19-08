@@ -20,12 +20,12 @@ picture {
 }
 
 .atm-container {
-  margin-inline: auto;
+  margin: 2rem auto;
   width: min(100%, var(--container-width));
 }
 
 .atm_title {
-  margin: 4rem auto;
+  margin: 4rem 0;
   font-size: 2.5rem;
   text-align: center;
   line-height: 37.8px;
@@ -33,20 +33,14 @@ picture {
 }
 
 .atm_subtitle {
-  margin: 2.5rem auto;
+  margin: 4rem 0;
   font-size: 1.75rem;
   text-align: center;
   color: var(--clr-grey);
   line-height: 37.8px;
   font-weight: 400;
 }
-.atm_title_sm {
-  font-size: 1.625rem;
-}
 
-.atm_title__left {
-  text-align: left;
-}
 .atm_clr-blue {
   color: var(--clr-blue);
 }
@@ -61,8 +55,13 @@ picture {
 
 @media (width < 900px) {
   .atm_title {
-    margin: 2rem 1rem;
+    margin: 2rem 0;
+    font-size: 2rem;
     line-height: 50px;
+  }
+
+  .atm_subtitle {
+    margin: 2rem 0;
   }
 }
 
@@ -75,7 +74,6 @@ picture {
 
 .atm_desc__img {
   border-radius: 3rem;
-  overflow: hidden;
 }
 
 .atm_desc__text {
@@ -90,17 +88,31 @@ picture {
 }
 
 @media (width < 900px) {
+  .atm_desc__wrapper {
+    padding-inline: 1rem;
+    max-width: 100%;
+  }
+
   .atm_desc_grid {
-    padding: 2.5rem 1rem;
+    padding: 0 1rem;
+    margin: 0;
     grid-template-columns: 1fr;
   }
   .atm_desc__text {
     grid-column: span 1;
+    font-size: 1.2rem;
+  }
+
+  .atm_desc__img {
+    width: 100%;
+    max-width: 100%;
   }
 
   .atm_desc__img img {
     width: 100%;
+    border-radius: 3rem;
     object-fit: contain;
+    max-width: 100%;
   }
   .atm_desc__img:last-of-type {
     grid-row: 3/4;
@@ -148,18 +160,31 @@ picture {
 }
 
 @media (width < 900px) {
+  .atm-style {
+    margin: 1rem 0;
+  }
+
   .atm-style__info {
     margin: 1rem;
-    padding: 2.5rem;
+
+    /* margin: 1rem; */
   }
 
   .atm-style__desc {
     grid-template-columns: 1fr;
   }
 
+  .atm-style__title {
+    font-size: 2rem;
+  }
+
   .atm-style__img {
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cvoer;
+  }
+  .atm-style__text {
+    font-size: 1.2rem;
   }
 }
 
