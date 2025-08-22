@@ -322,6 +322,8 @@ picture {
 @media (width < 900px) {
   .bc-filter {
     grid-template-columns: 1fr;
+    width: 90%;
+    margin-inline: auto;
     justify-content: center;
   }
   .bc-filter__title {

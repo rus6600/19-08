@@ -634,7 +634,7 @@
         $(".carousel2").slick(getSlickOptions());
         $(".carousel3").slick(getSlickOptions());
 
-        $(".bc-relative").click(function () {
+        $(".bc-relative").hover(function () {
           const windowWidth = $(window).width();
           if (windowWidth > 900) {
             $(".cert-wrapper")
@@ -646,6 +646,17 @@
                 }
               });
             $(this).children(".bc-popup").toggle();
+          }
+        });
+
+        $(".bc-relative").mouseleave(function () {
+          const windowWidth = $(window).width();
+          if (windowWidth > 900) {
+            $(".cert-wrapper")
+              .children()
+              .each(function () {
+                $(this).children(".bc-popup").hide();
+              });
           }
         });
       });
